@@ -1,67 +1,45 @@
-<!-- <template>
-  <div id="vision">
-    <button v-for="(vision, idx) in visions" :key="idx" @click="contentChange(idx)">
-      {{ vision.tab }}
-    </button>
-    {{ visions[index].content }}
-  </div>
-</template>
-
-<script>
-import { ref } from "vue";
-import visions from "./Data/visions"; // Vision 데이터가 있는 경로로 변경
-
-export default {
-  setup() {
-    const index = ref(0);
-    
-    const contentChange = (idx) => {
-      index.value = idx;
-    };
-
-    return {
-      index,
-      visions,
-      contentChange,
-    };
-  },
-};
-</script>
-
-<style scoped>
-/* Vision 페이지의 CSS 스타일이 필요하다면 추가하세요. */
-</style> -->
-
-<!-- Vision.vue -->
 <template>
   <div id="vision">
     <button v-for="(vision, idx) in visions" :key="idx" @click="contentChange(idx)">
       {{ vision.tab }}
     </button>
-    <component :is="visions[index].content"></component>
+    <component :is="currentComponent" :userInfo="userInfo" />
   </div>
 </template>
 
 <script>
-import { ref } from "vue";
-import visions from "./Data/visions"; // Vision 데이터가 있는 경로로 변경
+import Ability from "./Vision/Ability.vue";
+import Field from "./Vision/Field.vue";
+import Ssafy from "./Vision/Ssafy.vue";
 
 export default {
-  setup() {
-    const index = ref(0);
-    
-    const contentChange = (idx) => {
-      index.value = idx;
-    };
-
-    return {
-      index,
-      visions,
-      contentChange,
-    };
-  },
-};
-</script>
+    props: {
+      userInfo: Object,
+    },
+    data() {
+      return {
+        index: 0,
+      };
+    },
+    methods: {
+      contentChange(idx) {
+        this.index = idx;
+      },
+    },
+    computed: {
+      visions() {
+        return [
+          { tab: "Ability", component: Ability },
+          { tab: "Field", component: Field },
+          { tab: "Ssafy", component: Ssafy }
+        ];
+      },
+      currentComponent() {
+        return this.visions[this.index].component;
+      },
+    },
+  };
+  </script>
 
 <style scoped>
 /* Vision 페이지의 CSS 스타일이 필요하다면 추가하세요. */

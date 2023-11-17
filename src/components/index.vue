@@ -22,40 +22,38 @@
         </div>
       </div>
     </div>
-    <RadarChart :data="data" :options="options" />
+    <!-- <BarChart :chart-data="data" :chart-options="options" /> -->
   </div>
 </template>
 
-
 <script>
-import Radar from 'vue-chartjs';
+// import BarChart from './Chart/IndexChart.vue';
 
 export default {
-  components: Radar,
+  // components: {
+  //   BarChart, // 수정된 부분
+  // },
   data() {
     return {
-      indexFace: require('../image/index_face.png'),
-      data: {
-        labels: ['업무', '협업', '성실', '체력', '노력', '열정'],
-        datasets: [
-          {
-            label: '황인찬의 능력치',
-            data: [7, 8, 10, 2, 9, 7],
-            backgroundColor: 'rgba(38, 200, 4)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        scale: {
-          pointLabels: {
-            fontSize: 500, // 레이블 글자 크기 조정
-          },
-        },
-      },
-    };
-  },
+      indexFace: require('../image/index_face.png')
+    //   data: {
+    //     labels: ['업무', '협업', '성실', '체력', '노력', '열정'],
+    //     datasets: [
+    //       {
+    //         label: '황인찬의 능력치',
+    //         data: [7, 8, 10, 2, 9, 7],
+    //         backgroundColor: 'rgba(38, 200, 4)',
+    //         borderColor: 'rgba(255, 99, 132, 1)',
+    //         borderWidth: 1,
+    //       },
+    //     ],
+    //   },
+    //   options: {
+    //     responsive: true,
+    //     maintainAspectRatio: false,
+    //   },
+     };
+  }
 };
 </script>
 

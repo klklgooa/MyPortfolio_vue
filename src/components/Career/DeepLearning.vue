@@ -42,6 +42,6 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add your styles here */
+<style>
+@import "../CSS/Career.css"
 </style>

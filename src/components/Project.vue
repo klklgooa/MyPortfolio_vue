@@ -1,56 +1,45 @@
-<!-- // import { useState } from "react";
-// import projects from "./Data/projects";
-// import "./CSS/Project.css";
-
-// function Project() {
-//   const [index, setIndex] = useState(0);
-//   const contentChange = (event) => {
-//     setIndex(event.target.value);
-//   };
-//   return (
-//     <div id="project">
-//       {projects.map((project, index) => (
-//         <button onClick={contentChange} value={index}>
-//           {project.tab}
-//         </button>
-//       ))}
-
-//       {projects[index].content}
-//     </div>
-//   );
-// }
-
-// export default Project; -->
-
 <template>
   <div id="project">
     <button v-for="(project, idx) in projects" :key="idx" @click="contentChange(idx)">
       {{ project.tab }}
     </button>
-    {{ projects[index].content }}
+    <component :is="currentComponent" :userInfo="userInfo" />
   </div>
 </template>
 
 <script>
-import { ref } from "vue";
-import projects from "./Data/projects"; // 프로젝트 데이터가 있는 경로로 변경
+import Keyard from "./Project/Keyard.vue";
+import Hdiary from "./Project/Hdiary.vue";
+import Witty from "./Project/Witty.vue";
 
 export default {
-  setup() {
-    const index = ref(0);
-    
-    const contentChange = (idx) => {
-      index.value = idx;
-    };
-
-    return {
-      index,
-      projects,
-      contentChange,
-    };
-  },
-};
-</script>
+    props: {
+      userInfo: Object,
+    },
+    data() {
+      return {
+        index: 0,
+      };
+    },
+    methods: {
+      contentChange(idx) {
+        this.index = idx;
+      },
+    },
+    computed: {
+      projects() {
+        return [
+          { tab: "Keyard", component: Keyard },
+          { tab: "Hdiary", component: Hdiary },
+          { tab: "Witty", component: Witty }
+        ];
+      },
+      currentComponent() {
+        return this.projects[this.index].component;
+      },
+    },
+  };
+  </script>
 
 <style scoped>
 /* 프로젝트 페이지의 CSS 스타일이 필요하다면 추가하세요. */

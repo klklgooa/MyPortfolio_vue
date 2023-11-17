@@ -39,7 +39,7 @@
 
   <template>
     <div>
-      <h1 style="margin-left: 20px">Welcome, {{ userInfo.username }}!</h1>
+      <!-- <h1 style="margin-left: 20px">Welcome, {{ userInfo.username }}!</h1> -->
       <button v-for="(intro, idx) in intros" :key="idx" @click="contentChange(idx)">
         {{ intro.tab }}
       </button>
