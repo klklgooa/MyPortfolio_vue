@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@800&display=swap');
+
+@font-face {
+  font-family: 'establishRetrosansOTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: bolder;
+  background-color: white;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: bolder;
+  background-color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  color: white;
+  border-bottom: 1px solid gray;
+  background-color: #2DB400;
+  height: 160px;
+  width: 100%;
+}
+
+main:hover {
+  background-color: #fffff0;
+}
+
+#header_span a {
+  color: #fffff0;
+}
+
+#header_span {
+  margin-left: 36%;
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: 'establishRetrosansOTF';
+  margin-top: 36px;
+  display: inline-flex;
+  text-decoration: none;
+}

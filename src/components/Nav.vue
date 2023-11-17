@@ -1,9 +1,15 @@
 <template>
   <nav>
-    <router-link to="/introduction"><span class="nav_span">나의 소개</span></router-link>
-    <router-link to="/project"><span class="nav_span">프로젝트</span></router-link>
-    <router-link to="/career"><span class="nav_span">나의 경력</span></router-link>
-    <router-link to="/vision"><span class="nav_span">목표</span></router-link>
+    <ul id="nav_ul">
+      <li><router-link to="/introduction"><div class="nav_div">나의 소개</div></router-link></li>
+      <li><router-link to="/project"><div class="nav_div">프로젝트</div></router-link></li>
+      <li><router-link to="/career"><div class="nav_div">나의 경력</div></router-link></li>
+      <li><router-link to="/vision"><div class="nav_div">목표</div></router-link></li>
+    </ul>
+    
+    
+    
+    
   </nav>
 </template>
 

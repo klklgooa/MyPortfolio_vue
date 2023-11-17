@@ -11,8 +11,9 @@
             <input
               type="radio"
               id="Milky"
-              name="music"
+              name="music1"
               value="../music/Milky.mp3"
+              v-model="selectedMusic"
             />
             <label for="Milky">mStone_Milky </label>
           </div>
@@ -23,8 +24,9 @@
             <input
               type="radio"
               id="Gatron"
-              name="music"
+              name="music2"
               value="../music/Gatron.mp3"
+              v-model="selectedMusic"
             />
             <label for="Gatron">Gatron_Brown</label>
           </div>
@@ -35,8 +37,9 @@
             <input
               type="radio"
               id="Meteor"
-              name="music"
+              name="music3"
               value="../music/Meteor_white.mp3"
+              v-model="selectedMusic"
             />
             <label for="Meteor">SP-star_Meteor_white</label>
           </div>
@@ -63,6 +66,33 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      selectedMusic: null,
+      audio: new Audio(),
+    };
+  },
+  methods: {
+    playMusic() {
+      if (this.selectedMusic) {
+        this.audio.src = this.selectedMusic;
+        this.audio.load();
+        this.audio.play();
+      }
+    },
+    stopMusic() {
+      this.audio.pause();
+    },
+  },
+};
+</script>
+
+<style scoped>
+ @import './CSS/Header.css';
+</style>
+
+<!-- <script>
 export default {
   methods: {
     check() {
@@ -91,8 +121,4 @@ export default {
     };
   },
 };
-</script>
-
-<style scoped>
-/* 여기에 스타일을 추가하세요. */
-</style>
+</script> -->

@@ -1,6 +1,6 @@
 <template>
   <div id="resume">
-    <span id="resume_span">1.기초 자료</span>
+    <span class="resume_span">1.기초 자료</span>
     <table>
       <tr>
         <td rowspan="6" id="id_photo_td"><img class="id_photo" src="../../image/id_photo.png" alt="woo1" /></td>
@@ -35,7 +35,7 @@
       </tr>
     </table>
     <br />
-    <span>2.학력사항</span>
+    <span class="resume_span">2.학력사항</span>
     <table>
       <tr>
         <th background-color="lightGray">기간</th>
@@ -56,7 +56,7 @@
       </tr>
     </table>
     <br />
-    <span>3. 경력사항</span>
+    <span class="resume_span">3. 경력사항</span>
     <table>
       <tr>
         <th background-color="lightGray">기간</th>
@@ -76,7 +76,7 @@
       </tr>
     </table>
     <br />
-    <span>4. 개인능력 및 장단점</span>
+    <span class="resume_span">4. 개인능력 및 장단점</span>
     <table>
       <tr height="30">
         <td rowspan="4" background-color="lightGray">자격증 및 포상</td>
@@ -136,5 +136,5 @@ export default {
 </script>
 
 <style scoped>
-/* Resume 페이지의 CSS 스타일이 필요하다면 추가하세요. */
+ @import '../CSS/Resume.css' 
 </style>

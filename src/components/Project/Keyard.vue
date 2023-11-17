@@ -61,6 +61,6 @@ export default {
 </script>
 
 <style scoped>
-/* Keyard 페이지의 CSS 스타일이 필요하다면 추가하세요. */
+ @import '../CSS/Project.css'
 </style>
 
