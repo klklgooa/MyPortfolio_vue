@@ -1,36 +1,61 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@500&display=swap');
-h1{
-  color : Black;
+
+#selfIntro {
+  margin-top: 70px;
+  width: 100%;
+}
+
+h1 {
+  color: Black;
   margin-left: 20px;
 }
 
-.division{
+.division {
   font-family: "Noto+Serif+KR:wght@500";
-  margin-left: 20px ;
+  margin-left: 20px;
   font-size: 20px;
   border: 2pt groove rgb(38, 141, 4);
 }
-#pledge{
+
+#pledge {
   text-align: center;
 }
-p{
+
+p {
   margin-left: 20px;
 }
-button {
-  font-family: "sans-serif";
-  background-color: rgb(124, 233, 124);
-  color: white ;
-  padding: 5px 10px;
-  margin-top: 20px; 
-  margin-left: 20px;
-  font-size: 24px;
-  cursor: pointer;
-  transition-duration: 1s;
-  border-radius: 5px;
-  border-width: 1px;
-}
+
 button:hover {
   background-color: #2DB400;
   color: Black;
+}
+
+#selfIntro_table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.first-column, .second-column {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.first-column {
+  width: 7%;
+  /* 1열의 너비를 2열의 1/3로 설정 */
+  background-color: #4CAF50;
+  /* 초록색 */
+  color: white;
+  /* 하얀색 글자 */
+  font-weight: bold;
+  font-size: 1.2em;
+  /* 글자 크기를 키움 */
+  vertical-align: top;
+}
+
+.second-column {
+  padding: 20px;
+  /* 2열에 패딩 추가 */
 }

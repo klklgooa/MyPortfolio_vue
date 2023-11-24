@@ -10,29 +10,52 @@
     <img class="images" src="../../image/deep3.png" alt="keyard" />
     <br /><br /><br /><br />
     <hr />
+
+
+
+
+
     <h1>8월 7일 Neurophet</h1>
     <h3>뇌종양 검사 AI모델</h3>
-    <img class="images" src="../../image/deep5.png" alt="keyard" />
+    <img class="images_cancer" src="../../image/deep5.png" alt="keyard" />
     <br /><br /><br /><br />
     <hr />
+
     <h1>8월 8일 Deepnoid</h1>
     <h3>Mnist 데이터 활용</h3>
     <img class="images" src="../../image/deep6.png" alt="keyard" />
     <br /><br /><br /><br />
     <hr />
-    <br /><br />
-    <img class="images" src="../../image/deep4.png" alt="keyard" />
+
+    <h1>8월 9일 Doinglab</h1>
+    <h3>CycleGAN을 이용한 paintings</h3>
+    <img class="images_Doinglab" src="../../image/deep7.png" alt="keyard" />
+    <img class="images_Doinglab" src="../../image/deep8.png" alt="keyard" />
     <br /><br /><br /><br />
-    <fieldset>
-      <legend>딥러닝 스쿨 개요</legend>
-      <ul>
-        <li>AI활용 의학분야 회사들의 교육</li>
-        <li>각 회사의 임원이나 실무 담당자의 커리큘럼에 따름</li>
-        <li>AI모델 적용한 의학 프로그램 소개 및 회사의 비전 요약</li>
-        <li>회사들의 의학 데모프로그램 직접 체험</li>
-        <li>Google Colab 환경으로 간단한 의학 AI 생성 및 결과 도출</li>
-      </ul>
-    </fieldset>
+    <hr />
+
+    <h1>8월 10일 Viewno</h1>
+    <h3>X-ray Discriminator model</h3>
+    <img class="images_Doinglab" src="../../image/deep9.png" alt="keyard" />
+    <img class="images_Doinglab" src="../../image/deep10.png" alt="keyard" />
+    <br /><br /><br /><br />
+    <hr />
+
+
+    <br /><br />
+    <img class="images_schedule" src="../../image/deep4.png" alt="keyard" />
+    <br /><br /><br /><br />
+      <fieldset>
+        <legend>딥러닝 스쿨 개요</legend>
+        <ul>
+          <li>AI활용 의학분야 회사들의 교육</li>
+          <li>각 회사의 임원이나 실무 담당자의 커리큘럼에 따름</li>
+          <li>AI모델 적용한 의학 프로그램 소개 및 회사의 비전 요약</li>
+          <li>회사들의 의학 데모프로그램 직접 체험</li>
+          <li>Google Colab 환경으로 간단한 의학 AI 생성 및 결과 도출</li>
+        </ul>
+      </fieldset>
+
   </div>
 </template>
 

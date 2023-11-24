@@ -1,38 +1,87 @@
-.career_p{
-    font-size: 20px; 
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.career_p {
+    font-size: 20px;
+}
+
+.p_mstc {
+    font-size: 60px;
+    margin-left: 3%;
+    font-family: 'establishRetrosansOTF';
+}
+#mstc_img {
+    width: 70%;
+    height: 70%;
+    margin-left: 12%;
 }
 .poster {
-    width: 450px;
-    height: 550px;
+    width: 480px;
+    height: 650px;
     margin-left: 5%;
 }
+
 .images {
-    width:500px;
-    height:400px;
+    width: 500px;
+    height: 400px;
     margin-left: 41px;
 }
+
+.images_Doinglab {
+    width:70%;
+    height: 420px;
+    margin-left: 4%;
+}
+
+.images_cancer {
+    width:60%;
+    height: 800px;
+    margin-left: 4%;
+}
+
 h3 {
     margin-left: 3%;
 }
-.wooimages {
+
+#wooimage {
     width: 600px;
     height: 800px;
     margin-left: 4%;
 }
+.woo_img {
+    width: 80%;
+    height: 500px;
+}
+
+.images_schedule {
+    width: 50%;
+    height: 350px;
+    margin-left: 3%;
+}
+
 button {
     font-family: "sans-serif";
     background-color: rgb(124, 233, 124);
-    color: white ;
+    color: white;
     padding: 5px 10px;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-left: 20px;
     font-size: 24px;
     cursor: pointer;
     transition-duration: 1s;
     border-radius: 5px;
     border-width: 1px;
-  }
-  button:hover {
+}
+
+button:hover {
     background-color: #2DB400;
     color: Black;
-  }
+}
+
+#mstc_logo {
+    width: 7%;
+    height: 10%;
+}

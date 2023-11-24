@@ -1,3 +1,6 @@
+#resume {
+  margin-top: 70px;
+}
 em{
   margin-left: 100px;
   font-weight: bolder;
@@ -29,7 +32,7 @@ tr{
   text-align: center;
   width: 50% ;
   font-family: "Song Myung";
-  margin-left: 27%;
+  margin-left: 21%;
   font-size: 1.5em;
 }
 .id_photo{

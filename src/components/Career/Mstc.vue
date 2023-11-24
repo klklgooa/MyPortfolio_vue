@@ -1,6 +1,20 @@
 <template>
   <div>
     <h1>MSTC</h1>
+    <div>
+      <img id="mstc_logo" :src="require('../../image/mstc1.png')" alt="mstc" />
+    </div>
+    <br/><br/>
+    <div>
+      <img id="mstc_img" :src="require('../../image/mstc2.png')" alt="mstc" />
+      <br/><br/><br/>
+      <hr>
+      <br/><br/><br/>
+      <span class='p_mstc'>네비게이션 테스트</span>
+      <br/><br/><br/>
+      <img id="mstc_img" :src="require('../../image/mstc3.png')" alt="mstc" />
+    </div>
+    <br/><br/><br/><br/><br/><br/>
     <fieldset>
       <legend>MSTC 개요</legend>
       <ul>
@@ -50,5 +64,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add your styles here */
+@import "../CSS/Career.css"
 </style>

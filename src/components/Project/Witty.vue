@@ -31,12 +31,39 @@ export default Witty; -->
 
 <template>
   <div>
-    <h1>Witty(React 기반 Web Application)</h1>
     <img class="witty_logo" :src="require('../../image/witty3.png')" alt="witty" />
+    <h1>Witty(React 기반 Web Application)</h1>
     <br /><br /><br />
+    <br /><br /><br /><br />
+    <hr>
+    <br /><br />
+    <div>
+      <span id="p_keyard">Diagram of Witty</span>
+      <br /><br /><br /><br />
+      <img id="witty_4" :src="require('../../image/witty4.png')" alt="witty" />
+    </div>
+    <br /><br /><br /><br />
+    <hr>
+    <br /><br />
+    <div>
+      <span id="p_keyard">API_form of Witty</span>
+      <br /><br /><br /><br />
+      <img id="witty_5" :src="require('../../image/witty5.png')" alt="witty" />
+    </div>
+    <br /><br /><br /><br />
+    <hr>
+    <br /><br />
+    <div>
+      <span id="p_keyard">Interface of Witty</span>
+      <br /><br /><br /><br />
+      <img class="witty_img" :src="require('../../image/witty6.png')" alt="witty" />
+      <img class="witty_img" :src="require('../../image/witty8.png')" alt="witty" />
+      <img class="witty_img" :src="require('../../image/witty7.png')" alt="witty" />
+    </div>
+    <br /><br /><br /><br />
+
     <div>
       &nbsp;
-      <img class="witty_img" :src="require('../../image/witty2.png')" alt="witty" />
     </div>
     <br /><br /><br />
     <fieldset>
@@ -59,6 +86,6 @@ export default {
 </script>
 
 <style scoped>
- @import '../CSS/Project.css'
+@import '../CSS/Project.css'
 </style>
 

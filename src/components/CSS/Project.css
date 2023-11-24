@@ -1,12 +1,39 @@
+@font-face {
+  font-family: 'establishRetrosansOTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 img{
   width:100px;
   height:100px;
   margin-left: 10px;
 }
+#hdiary_logo {
+  margin-top: 3%;
+}
 .hdiary_img {
-  width:250px;
-  height:400px;
-  margin-left: 41px;
+  width:20%;
+  height:25%;
+  margin-left: 9%;
+}
+#hdiary_img8 {
+  width: 75%;
+  height: 50%;
+  margin-left: 10%;
+}
+
+#hdiary_img9 {
+  width: 75%;
+  height: 50%;
+  margin-left: 10%;
+}
+
+.p_hdiary {
+  font-size: 60px;
+  margin-left: 3%;
+  font-family: 'establishRetrosansOTF';
 }
 
 fieldset {
@@ -22,10 +49,21 @@ p{
   width: 92%;
   height: 100%;
 }
+.keyard_3{
+  width: 50%;
+  height: 50%;
+  margin-left: 24%;
+}
 #keyard_logo{
+  margin-top: 5%;
   margin-left: 1%;
-  width: 15%;
-  height: 10%;
+  width: 180px;
+  height: 50px;
+}
+#p_keyard {
+  font-size: 60px;
+  margin-left: 3%;
+  font-family: 'establishRetrosansOTF';
 }
 h2 {
   color: lightgray;
@@ -34,10 +72,23 @@ h2 {
 .witty_logo{
   width: 200px;
   margin-left: 2%;
+  margin-top: 5%;
 }
 .witty_img{
   width: 400px;
   height: 700px;
+  margin-left: 3%;
+}
+#witty_4 {
+  width: 70%;
+  height: 60%; 
+  margin-left: 12%;
+}
+
+#witty_5 {
+  width: 90%;
+  height: 70%; 
+  margin-left: 3%;
 }
 button {
   font-family: "sans-serif";

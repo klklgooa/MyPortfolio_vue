@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+#nav {
+    flex: 1;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+#container {
+    position: sticky;
+    top: 100px;
+    right: 300px;
+}
+#main {
+    flex: 4;
+    font-size: 20px;
+}
+
+.nav_li {
+    list-style: none;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+.nav_li:hover {
+    font-size: 23px;
+    content: '';
+    border-bottom: solid 4px white;
+    transition-duration: 1s;
+}
+.nav_tab {
+    list-style: none;
+    font-size: 26px;
+    margin: 15px;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    width: 300px;
+}
+
+.menu>li {
+    line-height: 40px;
+}
+
+.submenu {
+    display: none;
+}
+
+.menu>li:hover {
+    background-color: #2DB400;
+    transition-duration: 1s;
+}
+
+.menu>li:hover .submenu {
+    display: block;
+    transition-duration: 1s;
+}

@@ -2,8 +2,20 @@
   <div>
     <h1>우아한 테크 코스</h1>
     <h3>풀스택 프로그램</h3>
-    <img class="wooimages" :src="require('../../image/woo1.png')" alt="woo1" />&nbsp;
+    <img id="wooimage" :src="require('../../image/woo1.png')" alt="woo_img" />&nbsp;
     <br /><br /><br /><br /><br />
+    <hr>
+      <br/><br/><br/>
+      <span class='p_mstc'>우아한 테크 코스 멘토 미팅</span>
+      <br/><br/><br/>
+      <img class="woo_img" :src="require('../../image/woo2.png')" alt="woo_img" />
+
+      <hr>
+      <br/><br/><br/>
+      <span class='p_mstc'>우아한 테크 코스 발표</span>
+      <br/><br/><br/>
+      <img class="woo_img" :src="require('../../image/woo3.png')" alt="woo_img" />
+      <br/><br/><br/><br/><br/><br/>
     <fieldset>
       <legend>테크 코스 개요</legend>
       <ol>
@@ -24,5 +36,5 @@ export default {
 </script>
 
 <style scoped>
-/* Add your styles here */
+@import "../CSS/Career.css"
 </style>

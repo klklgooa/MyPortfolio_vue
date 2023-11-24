@@ -1,25 +1,25 @@
 import { createWebHistory, createRouter } from "vue-router";
 
-import index from "./components/index";
-import Resume from "./components/Intro/Resume";
-import SelfIntro from "./components/Intro/SelfIntro";
+import App from "../components/App";
+import Resume from "../components/Intro/Resume";
+import SelfIntro from "../components/Intro/SelfIntro";
 
-import Hdiary from "./components/Project/Hdiary";
-import Keyard from "./components/Project/Keyard";
-import Witty from "./components/Project/Witty";
+import Hdiary from "../components/Project/Hdiary";
+import Keyard from "../components/Project/Keyard";
+import Witty from "../components/Project/Witty";
 
-import DeepLearning from "./components/Career/DeepLearning";
-import Mstc from "./components/Career/Mstc";
-import Wooa from "./components/Career/Wooa";
+import DeepLearning from "../components/Career/DeepLearning";
+import Mstc from "../components/Career/Mstc";
+import Wooa from "../components/Career/Wooa";
 
-import Ability from "./components/Vision/Ability";
-import Field from "./components/Vision/Field";
-import Ssafy from "./components/Vision/Ssafy";
+import Ability from "../components/Vision/Ability";
+import Field from "../components/Vision/Field";
+import Ssafy from "../components/Vision/Ssafy";
 
 const routes = [
     {
         path: "/",
-        component: index,
+        component: App,
     },
     {
         path: "/resume",
@@ -67,10 +67,9 @@ const routes = [
         component: Ssafy,
     },
 ];
-
 const router = createRouter({
+    // 라우트 생성
     history: createWebHistory(),
     routes,
 });
-
 export default router;
